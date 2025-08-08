@@ -15,7 +15,7 @@ def load_fruits():
 def save_fruits(fruits):#定义一个函数叫save fruits，他有个参数fruits
     with open(FILENAME, 'w', encoding='utf-8') as f:  #以写入模式（'w'）打开名为 FILENAME 的文件，使用 UTF-8 编码读取（避免中文乱码）,'w'会覆盖原文件
         for fruit in fruits:
-            f.write(fruit + '\n') #把当前的水果吗写入文件，后面加上换行符\n, 保证每个水果独占文件的一行 
+            f.write(fruit + '\n') #把当前的水果吗写入文件，后面加上换行符\n, 保证每个水果独占文件的一行
 
 # 主程序
 def main():
